@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
-      "@": "/src", // Use absolute path from project root
+      "@": "/src",
     },
   },
   base: "/github-repositories-explorer/",
