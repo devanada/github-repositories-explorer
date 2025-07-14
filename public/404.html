@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="refresh"
+      content="0; url=/github-repositories-explorer/"
+    />
+    <script>
+      // For SPA: redirect to index.html preserving path
+      var l = window.location;
+      var repoBase = "/github-repositories-explorer";
+      var redirect =
+        repoBase + "/#" + l.pathname.replace(repoBase, "") + l.search + l.hash;
+      window.location.replace(redirect);
+    </script>
+    <title>Redirecting...</title>
+  </head>
+  <body>
+    <p>
+      Redirecting to
+      <a id="redirect-link" href="/github-repositories-explorer/"
+        >/github-repositories-explorer/</a
+      >...
+    </p>
+    <script>
+      document.getElementById("redirect-link").href = redirect;
+    </script>
+  </body>
+</html>
